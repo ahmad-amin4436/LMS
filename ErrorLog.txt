@@ -1,0 +1,369 @@
+28/03/2025 10:22:26 pm - System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at modMain.Encrypt(String plainText) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\App_Code\modMain.cs:line 27
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 204
+28/03/2025 10:22:32 pm - System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at modMain.Encrypt(String plainText) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\App_Code\modMain.cs:line 27
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 204
+28/03/2025 10:22:38 pm - System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at modMain.Encrypt(String plainText) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\App_Code\modMain.cs:line 27
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 204
+28/03/2025 10:24:27 pm - System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at modMain.Encrypt(String plainText) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\App_Code\modMain.cs:line 27
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 204
+28/03/2025 10:25:50 pm - System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at modMain.Encrypt(String plainText) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\App_Code\modMain.cs:line 27
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 204
+28/03/2025 10:28:04 pm - System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at modMain.Encrypt(String plainText) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\App_Code\modMain.cs:line 37
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 204
+28/03/2025 10:28:20 pm - System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at modMain.Encrypt(String plainText) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\App_Code\modMain.cs:line 37
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 204
+11/04/2025 11:39:45 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:39:49 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:39:51 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:39:52 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:39:59 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:39:59 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:39:59 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:40:00 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:40:00 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:44:11 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:44:12 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:44:12 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:44:12 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:44:12 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:44:13 pm - System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'DR_AKMAL_LAB.dbo.Patient', column 'NIC'. Truncated value: 'wqre21e1212313`1'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f56b5d18-af8c-43b9-80c2-9bddbe66e422
+Error Number:2628,State:1,Class:16
+11/04/2025 11:58:19 pm - System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the nvarchar value 'sd' to data type int.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f103306e-740e-4ebf-9103-32ebaa65ae45
+Error Number:245,State:1,Class:16
+11/04/2025 11:58:23 pm - System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the nvarchar value 'sd' to data type int.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f103306e-740e-4ebf-9103-32ebaa65ae45
+Error Number:245,State:1,Class:16
+11/04/2025 11:58:26 pm - System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the nvarchar value 'sd' to data type int.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 247
+ClientConnectionId:f103306e-740e-4ebf-9103-32ebaa65ae45
+Error Number:245,State:1,Class:16
+14/04/2025 10:17:06 pm - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Consultant'.
+Invalid column name 'Comments'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 251
+ClientConnectionId:2f8af101-f60d-4954-82f1-0801e9f71f03
+Error Number:207,State:1,Class:16
+14/04/2025 10:17:54 pm - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Consultant'.
+Invalid column name 'Comments'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 251
+ClientConnectionId:2f8af101-f60d-4954-82f1-0801e9f71f03
+Error Number:207,State:1,Class:16
+14/04/2025 10:18:54 pm - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Consultant'.
+Invalid column name 'Comments'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 251
+ClientConnectionId:2f8af101-f60d-4954-82f1-0801e9f71f03
+Error Number:207,State:1,Class:16
+14/04/2025 10:24:06 pm - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Consultant'.
+Invalid column name 'Comments'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 251
+ClientConnectionId:453e2371-0ee5-4f31-a531-580c664992b8
+Error Number:207,State:1,Class:16
+6/24/2025 9:39:52 PM - System.Data.SqlClient.SqlException (0x80131904): The target table 'Patient' of the DML statement cannot have any enabled triggers if the statement contains an OUTPUT clause without INTO clause.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 262
+ClientConnectionId:1922a26a-8081-4342-b82e-ad12bb14712e
+Error Number:334,State:1,Class:16
+6/24/2025 9:46:54 PM - System.Data.SqlClient.SqlException (0x80131904): The target table 'Patient' of the DML statement cannot have any enabled triggers if the statement contains an OUTPUT clause without INTO clause.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 262
+ClientConnectionId:b8f2ffbe-27b1-43a2-aade-9feadf83a877
+Error Number:334,State:1,Class:16
+6/24/2025 9:57:21 PM - System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to bigint.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Site_frmIndex.btnFinish_Click(Object sender, EventArgs e) in d:\Projects\TFS_Azure_Projects\DR_AKMAL_LAB\Site\frmIndex.aspx.cs:line 264
+ClientConnectionId:4be4fc74-171a-44cf-9104-ea1382c92082
+Error Number:8114,State:5,Class:16

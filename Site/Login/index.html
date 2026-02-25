@@ -1,0 +1,217 @@
+﻿<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>
+        Lab Management
+    </title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/reelslideshow.js"></script>
+
+    <link id="Stylesheet" href="css/LTR/Decibel_ltr.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript">
+        function stopscroll() {
+
+            if (document.getElementById("divChangePassword").style.visibility == 'hidden') {
+                $("body").css("overflow", "hidden");
+            } else {
+                $("body").css("overflow", "visible");
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28041744-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+
+
+    </script>
+    <!--<script>
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        document.getElementById("lblDate").innerText = date;
+        alert(date);
+    </script>-->
+</head>
+<body style="overflow: hidden">
+    <form name="form1" method="post" action="" id="form1">
+        <div>
+            <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE2NTA4MzI3MQ9kFgICAw9kFgQCAQ9kFhwCAQ8PFgIeBFRleHQFDUp1bHkgMDksIDIwMTlkZAIFDw8WAh8ABRtZb3VyIE9ubGluZSBSZXNvdXJjZSBDZW50cmVkZAIIDw8WAh8ABRRNeSBEZWNpYmVswq4gQWNjb3VudGRkAgoPDxYCHwAFR1RvIGFjY2VzcyB5b3VyIGVtcGxveW1lbnQgZGF0YSwgcGxlYXNlIGVudGVyIHlvdXIgVXNlciBJRCBhbmQgUGFzc3dvcmQ6ZGQCDA9kFgYCAQ8PFgIfAGVkZAIDDw8WAh8ABR5JbnZhbGlkIHVzZXIgbmFtZSBvciBwYXNzd29yZC5kZAIFDw8WBB8AZR4HVmlzaWJsZWhkZAIODw8WAh8ABQlVc2VyIE5hbWVkZAISDw8WAh8ABQhQYXNzd29yZGRkAhYPDxYCHwAFATFkZAIYDw8WAh8ABQhMYW5ndWFnZWRkAhoPEA8WBh4NRGF0YVRleHRGaWVsZAUMTGFuZ3VhZ2VOYW1lHg5EYXRhVmFsdWVGaWVsZAUNTGFuZ3VhZ2VJbmRleB4LXyFEYXRhQm91bmRnZBAVBAEtB0VuZ2xpc2gM2KfZhNi52LHYqNuMCNin2LHYr9mIFQQBMAExATIBMxQrAwRnZ2dnFgECAWQCHQ8PFgIfAAUHU2lnbiBJbmRkAiAPDxYCHwAFEEZvcmdvdCBQYXNzd29yZD9kZAIjDw8WAh8ABTlEZWNpYmVsIGlzIG9wdGltaXplZCBmb3IgdXNlIHdpdGggdGhlIGZvbGxvd2luZyBicm93c2VyczpkZAI3Dw8WAh8ABTlEZWNpYmVsJnJlZzsgSFJNUy4gJmNvcHk7IDIwMTggSFJTRy4gQWxsIFJpZ2h0cyBSZXNlcnZlZC5kZAIDD2QWBgIBD2QWAgIBD2QWAmYPZBYCZg9kFggCAQ8PFgIfAAUQUGFzc3dvcmQgRXhwaXJlZGRkAgMPDxYCHwAFH0luc2VydCBuZXcgcGFzc3dvcmQgdG8gY29udGludWVkZAIFD2QWAgIBD2QWBGYPZBYCZg9kFgICAQ8PFgIfAAUIUGFzc3dvcmRkZAIBD2QWAmYPZBYCAgEPDxYCHwAFEFJlLXR5cGUgUGFzc3dvcmRkZAIHD2QWAgIBD2QWBGYPZBYCAgEPZBYEAgEPDxYCHwAFBlN1Ym1pdGRkAgMPDxYCHwAFBkNhbmNlbGRkAgEPZBYCZg9kFgICAQ8PFgIfAAUQUGFzc3dvcmQgUG9saWN5OmRkAgMPZBYIAgsPZBYCZg9kFgQCAQ8PFgIfAAUNRW1haWwgQWRkcmVzc2RkAgMPDxYCHwAFDkUtbWFpbCBBZGRyZXNzZGQCDQ9kFgJmD2QWAgIBDw8WAh8ABQdDZWxsIE5vZGQCDw9kFgJmD2QWAgIBDw8WAh8ABQhDTklDIE5vLmRkAhEPDxYCHwAFEFJlY292ZXIgUGFzc3dvcmRkZAIFD2QWBAIFDw8WAh8ABRJCYWNrIHRvIExvZ2luIFBhZ2VkZAIHDw8WAh8ABQVDbG9zZWRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQ1wYl9kaXNjbGFpbWVyTBC6nS7Jdkv4jYN5jSdRgDwi8kRSTgLUqXIQCWrSOTo=" />
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+//]]>
+        </script>
+
+
+        <script src="WebResource0295.js?d=jiiN-EO1r84-wwuSFeEI8CLJ7tOkzyC2mg-MN1U7C6A3h4OqCfhOArnTgImdpgzne-GNBaNKFsTkKuQY9jB7todgv6kt8j6sVpqr6dUaZTE1&amp;t=636935065199995647" type="text/javascript"></script>
+
+
+        <script src="WebResource268b.js?d=LyUGFMb8umIDAMm7zj1QBBElgm9eIjX0xajVehy8UBS8xbO7ceh6UDz06m4tzN4NA3tI8NQkFUDB5W-WJoCew9S_As2woMJezh3ylH-WYUk1&amp;t=636935065199995647" type="text/javascript"></script>
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8A3D921F" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA5pS9hJ/f6Nv6fnKtTIg1C7sMfTPCTs2tTyftzVLuzJlaYqlFHo35PaBnr4LiN5JN+jX77Jy2Q/2nw459eofxam5mgPQiw15FD4zBWxQRa1tHhDBU7/Ir6dQu26pwtJ3/7SAjx55oCbUGKUJwpgNpB3rDc4M0Qs/JLD8yhK9CjwuhApVuVNrgydqN+qvwE5EJzXSFfKCCKpDY/ftNFQK1DDT4Z19ThWgMCBmpm4ZtrLZ3W2IlrSGb/fFEaUIulyu538oWhQre5zqxZIFOaI3DIPRNK2U1kRIHMG9ORjvkKJCbBOQOM1hPNxqITzYTwFdEh8z8aHrEskWK+HRX9f7Zga" />
+        </div>
+        <div id="divLoginPage">
+            <div class="container_v">
+                <div class="top">
+                    <div class="topbar">
+                        <div class="topbarleft">
+                            <div class="toparrow">
+                                &nbsp;
+                            </div>
+                            <div class="toparrowLink">
+                                <span id="lblDate" class="lbldate">February 20, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_v">
+
+                    <div class="logobar_login">
+                        <div class="decibellogo_login">
+                            <img src="images/logo.gif" width="160" />
+                        </div>
+                        <div>
+                            <span id="lbl_OnLine" class="decibel_text">Your Lab / Diagnostic Centre</span>
+                        </div>
+                    </div>
+                    <div class="loginbar_login">
+                        <script type="text/javascript">
+                            var firstreel = new reelslideshow({
+                                wrapperid: "myreel", //ID of blank DIV on page to house Slideshow
+                                dimensions: [740, 444], //width/height of gallery in pixels. Should reflect dimensions of largest image
+                                imagearray: [
+                                    ["images/Login_img1.jpg"], //["image_path", "optional_link", "optional_target"]
+                                    ["images/Login_img2.jpg"],
+                                    ["images/Login_img3.jpg"] //<--no trailing comma after very last image element!
+                                ],
+                                displaymode: { type: 'auto', pause: 4000, cycles: 5, pauseonmouseover: false },
+                                orientation: "h", //Valid values: "h" or "v"
+                                persist: false, //remember last viewed slide and recall within same session true or false?
+                                slideduration: 500 //transition duration (milliseconds)
+                            })
+                        </script>
+
+                        <div class="showreel">
+                            <div id="myreel"></div>
+
+                        </div>
+                        <div class="login_main">
+                            <div class="container_login">
+                                <span id="lbl_LoginHeading" class="login_heading1">Lab Management Account</span>
+                                <br />
+                                <br />
+                                <span id="lbl_LoginInstruction">To access the lab portal, please enter your User ID and Password:</span>
+
+                                <br />
+                                <br />
+                                <span id="lblUserID">User Name</span>
+                                <br />
+                                <input name="tb_UserId" type="text" id="tb_UserId" class="teal" style="width:210px;" />
+                                <br />
+                                <br />
+                                <span id="lblPassword">Password</span>
+                                <br />
+                                <input name="tb_Password" type="password" id="tb_Password" class="teal" autocomplete="off" style="width:210px;" />
+                                <br />
+                                <br />
+
+                                <!--<span id="lblLanguage">Language</span>
+                                <br />
+                                <select name="ddl_Language" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddl_Language\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddl_Language" class="teal" style="width:210px;">
+                                    <option value="0">-</option>
+                                    <option selected="selected" value="1">English</option>
+                                    <option value="2">العربی</option>
+                                    <option value="3">اردو</option>
+
+                                </select>
+
+                                <br />
+                                <br />-->
+                                <div id="LoginLink">
+                                    <input type="submit" name="pb_SignIn" value="Sign In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;pb_SignIn&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="pb_SignIn" class="btnTeal" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    <!--<a id="lbl_ForgetPassword" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;lbl_ForgetPassword&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Forgot Password?</a>-->
+
+                                </div>
+                                <br />
+                                <!--<div class="BrowerSupportText" style="text-align: center">
+                                    <span id="lbl_BST">Lab Management is optimized for use with the following browsers:</span>
+                                    <br />
+                                    <br />
+                                    <img id="Chrome" border="0" src="images/icon_gchrome.png" alt="Google Chrome" style="border-width:0px;" />
+                                    <img id="IE" border="0" src="images/icon_ie.png" alt="Google Chrome" style="border-width:0px;" />
+                                    <img id="Safari" border="0" src="images/icon_safari.png" alt="Google Chrome" style="border-width:0px;" />
+                                    <br />
+                                    <br />
+
+                                    <input type="image" name="pb_disclaimer" id="pb_disclaimer" border="0" src="images/btn_disclaimer.png" alt="Disclaimer" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;pb_disclaimer&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="border-width:0px;" />
+
+                                </div>-->
+
+                            </div>
+                        </div>
+                        <input type="hidden" name="hdUserIndex" id="hdUserIndex" />
+                        <input type="hidden" name="hdLanguageIndex" id="hdLanguageIndex" />
+                        <input type="hidden" name="hdClientIndex" id="hdClientIndex" />
+                    </div>
+                </div>
+
+
+
+                <div class="bottom">
+                    <div class="footer_login">
+                        <div class="footerbarleft_login">
+                            <span id="lblFooter">Abstract &reg; Lab Management. &copy; 2019. All Rights Reserved.</span>
+                        </div>
+                        <div class="footerbarright_login">
+                            <div class="socialmediacontainer">
+
+                            </div>
+                            <div class="socialmediacontainer">
+
+                            </div>
+                            <div class="socialmediacontainer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            WebForm_AutoFocus('tb_UserId');
+        </script>
+    </form>
+</body>
+</html>
