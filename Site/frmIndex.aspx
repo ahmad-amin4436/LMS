@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmIndex.aspx.cs" Inherits="Site_frmIndex" %>
+<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmIndex.aspx.cs" Inherits="Site_frmIndex" %>
 
 <%@ Register Src="~/sysCtrl/msg_Box.ascx" TagPrefix="uc1" TagName="msg_Box" %>
 
@@ -28,7 +28,7 @@
                                                                             <asp:DropDownList
                                                                                 ID="ddlLocation"
                                                                                 onchange="updatePatientNo()"
-                                                                                CssClass="form-control common-font rounded mySelect2"
+                                                                                CssClass="form-control common-font rounded-0 mySelect2"
                                                                                 runat="server"
                                                                                 AppendDataBoundItems="true"
                                                                                 AutoPostBack="false">
@@ -68,7 +68,7 @@
                                                                     <div class="col-md-3">
 
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtPatientNo" CssClass="form-control common-font rounded" runat="server" ReadOnly="true" />
+                                                                            <asp:TextBox ID="txtPatientNo" CssClass="form-control common-font rounded-0" runat="server" ReadOnly="true" />
                                                                             <asp:HiddenField ID="hfPatientNo" runat="server" />
 
                                                                         </div>
@@ -79,7 +79,7 @@
 
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtMRNo" CssClass="form-control common-font rounded" runat="server" />
+                                                                            <asp:TextBox ID="txtMRNo" CssClass="form-control common-font rounded-0" runat="server" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -87,7 +87,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtFirstName" CssClass="form-control common-font rounded" runat="server" />
+                                                                            <asp:TextBox ID="txtFirstName" CssClass="form-control common-font rounded-0" runat="server" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -95,7 +95,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtLastName" CssClass="form-control common-font rounded" runat="server" />
+                                                                            <asp:TextBox ID="txtLastName" CssClass="form-control common-font rounded-0" runat="server" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -103,7 +103,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtFatherHusbandName" CssClass="form-control common-font rounded" runat="server" />
+                                                                            <asp:TextBox ID="txtFatherHusbandName" CssClass="form-control common-font rounded-0" runat="server" />
                                                                         </div>
                                                                     </div>
 
@@ -112,7 +112,7 @@
                                                                     </div>
                                                                     <div class="col-md-1">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtAge" CssClass="form-control common-font rounded" runat="server" />
+                                                                            <asp:TextBox ID="txtAge" CssClass="form-control common-font rounded-0" runat="server" />
                                                                         </div>
                                                                     </div>
 
@@ -121,7 +121,7 @@
                                                                     </div>
                                                                     <div class="col-md-1">
                                                                         <div class="form-group">
-                                                                            <asp:DropDownList ID="ddlDuration" CssClass="form-control common-font rounded" runat="server">
+                                                                            <asp:DropDownList ID="ddlDuration" CssClass="form-control common-font rounded-0" runat="server">
                                                                                 <asp:ListItem Text="--- Select Duration---" Value="" Selected="True" Enabled="False" />
                                                                                 <asp:ListItem Text="Years." Value="Years." />
                                                                                 <asp:ListItem Text="Months." Value="Months." />
@@ -138,7 +138,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:DropDownList ID="ddlMaritalStatus" CssClass="form-control common-font rounded mySelect2" runat="server">
+                                                                            <asp:DropDownList ID="ddlMaritalStatus" CssClass="form-control common-font rounded-0 mySelect2" runat="server">
                                                                                 <asp:ListItem Text="--- Select Marital Status---" Value="" Selected="True" Enabled="False" />
                                                                                 <asp:ListItem Text="Single" Value="Single." />
                                                                                 <asp:ListItem Text="Married" Value="Married" />
@@ -148,13 +148,13 @@
                                                                     <%-- <div class="col-md-4">
                             <label for="txtDob" class="small-font font-weight-normal">DOB:</label>
                             <div class="form-group">
-                                <asp:TextBox ID="txtDob" CssClass="form-control common-font rounded" runat="server" />
+                                <asp:TextBox ID="txtDob" CssClass="form-control common-font rounded-0" runat="server" />
                             </div>
                         </div>--%>
                                                                     <%--<div class="col-md-4">
                             <label for="ddlBloodGroup" class="small-font font-weight-normal">Blood Group:</label>
                             <div class="form-group">
-                                <asp:DropDownList ID="ddlBloodGroup" CssClass="form-control common-font rounded" runat="server">
+                                <asp:DropDownList ID="ddlBloodGroup" CssClass="form-control common-font rounded-0" runat="server">
                                     <asp:ListItem Text="--- Select Blood Group ---" Value="" Selected="True" Enabled="False" />
                                     <asp:ListItem Text="A +ve" Value="A +ve" />
                                     <asp:ListItem Text="A -ve" Value="A -ve" />
@@ -172,7 +172,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtRegistrationDate" CssClass="form-control common-font rounded" runat="server" TextMode="DateTimeLocal" autocomplete="off" />
+                                                                            <asp:TextBox ID="txtRegistrationDate" CssClass="form-control common-font rounded-0" runat="server" TextMode="DateTimeLocal" autocomplete="off" />
 
                                                                         </div>
                                                                     </div>
@@ -181,7 +181,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtPhone" CssClass="form-control common-font rounded" MaxLength="11" oninput="enforcePhoneLength(this)" runat="server" />
+                                                                            <asp:TextBox ID="txtPhone" CssClass="form-control common-font rounded-0" MaxLength="11" oninput="enforcePhoneLength(this)" runat="server" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -189,7 +189,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtMobile" CssClass="form-control common-font rounded" MaxLength="11" oninput="enforceMobileLength(this)" runat="server" />
+                                                                            <asp:TextBox ID="txtMobile" CssClass="form-control common-font rounded-0" MaxLength="11" oninput="enforceMobileLength(this)" runat="server" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -197,7 +197,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtNIC" CssClass="form-control common-font rounded rounded" MaxLength="13"
+                                                                            <asp:TextBox ID="txtNIC" CssClass="form-control common-font rounded-0 rounded" MaxLength="13"
                                                                                 oninput="enforceCNICLength(this)" runat="server" />
                                                                         </div>
                                                                     </div>
@@ -206,7 +206,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:DropDownList ID="ddlGender" CssClass="form-control common-font rounded mySelect2" runat="server">
+                                                                            <asp:DropDownList ID="ddlGender" CssClass="form-control common-font rounded-0 mySelect2" runat="server">
                                                                                 <asp:ListItem Text="--- Select Gender ---" Value="" Selected="True" Enabled="False" />
                                                                                 <asp:ListItem Text="Male" Value="1" />
                                                                                 <asp:ListItem Text="Female" Value="2" />
@@ -219,7 +219,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:DropDownList ID="ddlCity" CssClass="form-control common-font rounded mySelect2" runat="server">
+                                                                            <asp:DropDownList ID="ddlCity" CssClass="form-control common-font rounded-0 mySelect2" runat="server">
                                                                                 <asp:ListItem Text="--- Select City ---" Value="" Selected="True" Enabled="False" />
                                                                                 <asp:ListItem Text="Lahore" Value="Lahore" />
                                                                                 <asp:ListItem Text="Karachi" Value="Karachi" />
@@ -231,7 +231,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:DropDownList ID="ddlCountry" CssClass="form-control common-font rounded mySelect2" runat="server">
+                                                                            <asp:DropDownList ID="ddlCountry" CssClass="form-control common-font rounded-0 mySelect2" runat="server">
                                                                                 <asp:ListItem Text="--- Select Country ---" Value="" Selected="True" Enabled="False" />
                                                                                 <asp:ListItem Text="Pakistan" Value="Pakistan" />
                                                                                 <asp:ListItem Text="USA" Value="USA" />
@@ -243,7 +243,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtEmail" CssClass="form-control common-font rounded" runat="server" TextMode="Email" />
+                                                                            <asp:TextBox ID="txtEmail" CssClass="form-control common-font rounded-0" runat="server" TextMode="Email" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -251,7 +251,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:DropDownList ID="ddlReference" CssClass="form-control common-font rounded mySelect2" runat="server">
+                                                                            <asp:DropDownList ID="ddlReference" CssClass="form-control common-font rounded-0 mySelect2" runat="server">
                                                                                 <asp:ListItem Text="--- Select Reference ---" Value="" Selected="True" Enabled="False" />
                                                                             </asp:DropDownList>
                                                                         </div>
@@ -261,7 +261,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtCABGNo" CssClass="form-control common-font rounded" runat="server" />
+                                                                            <asp:TextBox ID="txtCABGNo" CssClass="form-control common-font rounded-0" runat="server" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -269,7 +269,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtAddress" CssClass="form-control common-font rounded" runat="server" TextMode="MultiLine" />
+                                                                            <asp:TextBox ID="txtAddress" CssClass="form-control common-font rounded-0" runat="server" TextMode="MultiLine" />
                                                                         </div>
                                                                     </div>
 
@@ -278,7 +278,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtConsultant" runat="server" CssClass="form-control common-font rounded" />
+                                                                            <asp:TextBox ID="txtConsultant" runat="server" CssClass="form-control common-font rounded-0" />
                                                                         </div>
                                                                     </div>
 
@@ -287,7 +287,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtComments" runat="server" CssClass="form-control common-font rounded" />
+                                                                            <asp:TextBox ID="txtComments" runat="server" CssClass="form-control common-font rounded-0" />
                                                                         </div>
                                                                     </div>
 
@@ -401,7 +401,7 @@
 
                                                                 <ul class="float-right">
                                                                     <li class="list-inline-item">
-                                                                        <asp:Button ID="btnFinish" runat="server" Text="Next" CssClass="btn bg-blueGradient text-white" OnClientClick="return validateForm();" OnClick="btnFinish_Click" />
+                                                                        <asp:Button ID="btnFinish" runat="server" Text="Next" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClientClick="return validateForm();" OnClick="btnFinish_Click" />
                                                                     </li>
                                                                 </ul>
                                                             </div>

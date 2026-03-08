@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Report" Language="C#" AutoEventWireup="true" CodeFile="frmReport.aspx.cs" Inherits="Site_frmReport" %>
+<%@ Page Title="Lab Report" Language="C#" AutoEventWireup="true" CodeFile="frmReport.aspx.cs" Inherits="Site_frmReport" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -72,8 +72,8 @@
         }
         
         .test-table th {
-            background-color: #0056b3;
-            color: white;
+            background-color: #f8f9fa;
+            color: #212529;
             padding: 8px;
             text-align: left;
         }
@@ -160,7 +160,7 @@
             <!-- Test Details -->
           <h3>TEST Reports</h3>
             <asp:PlaceHolder ID="phTestResults" runat="server"></asp:PlaceHolder>
-<asp:GridView ID="gvTestResults" runat="server" AutoGenerateColumns="true" OnRowDataBound="GvTestResults_RowDataBound" />
+<asp:GridView ID="gvTestResults" runat="server" AutoGenerateColumns="true" OnRowDataBound="GvTestResults_RowDataBound" CssClass="table table-bordered table-sm table-hover common-font" HeaderStyle-CssClass="bg-light font-weight-bold small-font" />
 <style>
     #gvTestResults {
     border-collapse: collapse;

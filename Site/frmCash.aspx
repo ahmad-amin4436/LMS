@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmCash.aspx.cs" Inherits="Site_frmCash" %>
+<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmCash.aspx.cs" Inherits="Site_frmCash" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ScriptManager runat="server" />
@@ -29,7 +29,7 @@
                                             </div>
                                             <div class="col-md-8">
                                                 <asp:DropDownList ID="ddlCenterName" runat="server"
-                                                    CssClass="form-control common-font rounded mySelect2"
+                                                    CssClass="form-control common-font rounded-0 mySelect2"
                                                     AutoPostBack="true"
                                                     OnSelectedIndexChanged="ddlCenterName_SelectedIndexChanged" />
                                             </div>
@@ -196,7 +196,7 @@
                                     </div>
 
                                     <!-- GridView -->
-                                    <asp:GridView ID="gvCashSummary" runat="server" CssClass="table table-bordered" AutoGenerateColumns="false">
+                                    <asp:GridView ID="gvCashSummary" runat="server" CssClass="table table-bordered table-sm table-hover common-font" AutoGenerateColumns="false" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                         <Columns>
                                             <asp:BoundField DataField="FirstName" HeaderText="First Name" />
                                             <asp:BoundField DataField="Sex" HeaderText="Sex" />

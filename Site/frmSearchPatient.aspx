@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmSearchPatient.aspx.cs" Inherits="Site_frmSearchPatient" %>
+<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmSearchPatient.aspx.cs" Inherits="Site_frmSearchPatient" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -116,7 +116,7 @@
         <div class="col-md-8">
             <!-- Modified Dropdown for selecting Center -->
             <div class="dropdown">
-                <asp:Button ID="btnCenter" runat="server" CssClass="form-control common-font rounded text-left"
+                <asp:Button ID="btnCenter" runat="server" CssClass="form-control common-font rounded-0 text-left"
                     Text="Select Centers" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
                 
                 <!-- Dropdown Menu with scrollable content -->
@@ -229,7 +229,7 @@
                             </thead>
                             <tbody>
                                  <asp:Button ID="btnSearch" runat="server" Text="Search"
-            CssClass="btn bg-blueGradient text-white float-right move-up"
+            CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm float-right move-up"
             OnClick="btnSearch_Click" />
                                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-sm table-hover"
     AllowPaging="True" PageSize="10" 
@@ -249,141 +249,40 @@
         <asp:BoundField DataField="StatusDescription" HeaderText="Status" />
        <asp:TemplateField HeaderText="Actions">
     <ItemTemplate>
-        <div class="d-flex action-buttons">
-            <asp:Button 
-                ID="btnAddTest" 
-                runat="server" 
-                CssClass="btn btn-view-test" 
-                Text="Test"  
-                CommandName="AddTest" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnAddTest_Click" />
-
-            <asp:Button 
-                ID="btnSaveCase"
-                runat="server" 
-                Text="Invoice"
-                OnClick="btnSaveCase_Click"  
-                CommandArgument='<%# Eval("ID") %>' 
-                CssClass="btn btn-invoice" />
-
-            <asp:Button 
-                ID="btnApprove" 
-                runat="server" 
-                CssClass="btn btn-view-report"
-                Text="Report H"  
-                CommandName="Approve" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnApprove_Click" />
-            <asp:Button 
-                ID="btnApproveWH" 
-                runat="server" 
-                CssClass="btn btn-view-report"
-                Text="Report WH"  
-                CommandName="Approve" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnApproveWH_Click" />
-            <asp:Button 
-                ID="btnApproveG" 
-                runat="server" 
-                CssClass="btn btn-view-report"
-                Text="Report G WH"  
-                CommandName="Approve" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnApproveG_Click" />
-            <asp:Button 
-                ID="btnApproveWG" 
-                runat="server" 
-                CssClass="btn btn-view-report"
-                Text="Report WG"  
-                CommandName="Approve" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnApproveWG_Click" />
-
-            <asp:Button 
-                ID="btnPrescription" 
-                runat="server" 
-                CssClass="btn btn-view-prescription"
-                Text="Rx"  
-                CommandName="Prescription" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnPrescription_Click" />
-            <asp:Button 
-                ID="btnClearDues" 
-                runat="server" 
-                CssClass="btn btn-view-prescription"
-                Text="Dues Remaining"  
-                CommandName="Prescription" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnClearDues_Click" />
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm dropdown-toggle" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Click for actions">
+                <i class="fa fa-ellipsis-v"></i> Actions
+            </button>
+            <div class="dropdown-menu dropdown-menu-right rounded-0">
+                <asp:LinkButton ID="btnAddTest" runat="server" CssClass="dropdown-item common-font" 
+                    CommandName="AddTest" CommandArgument='<%# Eval("ID") %>' OnClick="btnAddTest_Click"
+                    title="Add or view tests"><i class="fa fa-flask mr-2"></i>Test</asp:LinkButton>
+                <asp:LinkButton ID="btnSaveCase" runat="server" CssClass="dropdown-item common-font" 
+                    CommandArgument='<%# Eval("ID") %>' OnClick="btnSaveCase_Click"
+                    title="View or create invoice"><i class="fa fa-file-invoice-dollar mr-2"></i>Invoice</asp:LinkButton>
+                <div class="dropdown-divider"></div>
+                <asp:LinkButton ID="btnApprove" runat="server" CssClass="dropdown-item common-font" 
+                    CommandName="Approve" CommandArgument='<%# Eval("ID") %>' OnClick="btnApprove_Click"
+                    title="Report Header"><i class="fa fa-file-alt mr-2"></i>Report H</asp:LinkButton>
+                <asp:LinkButton ID="btnApproveWH" runat="server" CssClass="dropdown-item common-font" 
+                    CommandName="Approve" CommandArgument='<%# Eval("ID") %>' OnClick="btnApproveWH_Click"
+                    title="Report With Header"><i class="fa fa-file-alt mr-2"></i>Report WH</asp:LinkButton>
+                <asp:LinkButton ID="btnApproveG" runat="server" CssClass="dropdown-item common-font" 
+                    CommandName="Approve" CommandArgument='<%# Eval("ID") %>' OnClick="btnApproveG_Click"
+                    title="Report G With Header"><i class="fa fa-file-alt mr-2"></i>Report G WH</asp:LinkButton>
+                <asp:LinkButton ID="btnApproveWG" runat="server" CssClass="dropdown-item common-font" 
+                    CommandName="Approve" CommandArgument='<%# Eval("ID") %>' OnClick="btnApproveWG_Click"
+                    title="Report WG"><i class="fa fa-file-alt mr-2"></i>Report WG</asp:LinkButton>
+                <div class="dropdown-divider"></div>
+                <asp:LinkButton ID="btnPrescription" runat="server" CssClass="dropdown-item common-font" 
+                    CommandName="Prescription" CommandArgument='<%# Eval("ID") %>' OnClick="btnPrescription_Click"
+                    title="View prescription"><i class="fa fa-prescription-bottle-alt mr-2"></i>Rx</asp:LinkButton>
+                <asp:LinkButton ID="btnClearDues" runat="server" CssClass="dropdown-item common-font" 
+                    CommandArgument='<%# Eval("ID") %>' OnClick="btnClearDues_Click"
+                    title="View or pay dues"><i class="fa fa-money-check-alt mr-2"></i>Dues Remaining</asp:LinkButton>
+            </div>
         </div>
-        <style>
-    .action-buttons {
-        gap: 8px;
-        flex-wrap: wrap;
-    }
-    
-    .action-buttons .btn {
-        border: none;
-        border-radius: 4px;
-        padding: 6px 12px;
-        font-size: 10px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        min-width: 50px;
-        text-align: center;
-    }
-    
-    .btn-view-test {
-        background: linear-gradient(135deg, #4a6cf7 0%, #2541b2 100%);
-        color: white;
-    }
-    
-    .btn-view-test:hover {
-        background: linear-gradient(135deg, #2541b2 0%, #4a6cf7 100%);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-    
-    .btn-invoice {
-        background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
-        color: white;
-    }
-    
-    .btn-invoice:hover {
-        background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-    
-    .btn-view-report {
-        background: linear-gradient(135deg, #ff7b00 0%, #ff5500 100%);
-        color: white;
-    }
-    
-    .btn-view-report:hover {
-        background: linear-gradient(135deg, #ff5500 0%, #ff7b00 100%);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-    .btn-view-prescription {
-        background: linear-gradient(135deg, #ff4d4d 0%, #cc0000 100%);
-        color: white;
-    }
-    
-    .btn-view-prescription:hover {
-        background: linear-gradient(135deg, #ff4d4d 0%, #cc0000 100%);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-    
-    .btn:active {
-        transform: translateY(1px);
-        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    }
-</style>
     </ItemTemplate>
 </asp:TemplateField>
 
@@ -396,10 +295,10 @@
             <span>Page <%= (GridView1.PageIndex + 1) %> of <%= GridView1.PageCount %> </span>
         </div>
         <div class="pagination-right">
-            <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn bg-blueGradient text-white" OnClick="PreviousPageButton_Click" 
+            <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="PreviousPageButton_Click" 
                 Enabled="<%# GridView1.PageIndex > 0 %>" />
             
-            <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn bg-blueGradient text-white float-right" OnClick="NextPageButton_Click" 
+            <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm float-right" OnClick="NextPageButton_Click" 
                 Enabled="<%# GridView1.PageIndex < GridView1.PageCount - 1 %>" />
         </div>
         <div class="pagination-bottom">
@@ -430,11 +329,11 @@
 
       <div class="modal-body">
         <div class="mb-2">
-          <button id="btnAddRow" class="btn btn-sm btn-success">+ Add Row</button>
+          <button id="btnAddRow" class="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm">+ Add Row</button>
         </div>
 
         <div class="table-responsive">
-          <table id="duesTable" class="table table-bordered table-striped">
+          <table id="duesTable" class="table table-bordered table-sm table-hover">
             <thead>
               <tr>
                 <th style="width:34%;">Test / Description</th>
@@ -463,8 +362,8 @@
       </div>
 
       <div class="modal-footer">
-        <button id="btnSaveDues" class="btn btn-primary">Save</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button id="btnSaveDues" class="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm">Save</button>
+        <button type="button" class="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" data-dismiss="modal">Cancel</button>
       </div>
 
     </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmDoctorApproval.aspx.cs" Inherits="Site_frmDoctorApproval" %>
+<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmDoctorApproval.aspx.cs" Inherits="Site_frmDoctorApproval" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -31,7 +31,7 @@
                                             <label class="small-font font-weight-normal">Patient ID:</label>
                                             </div>
                                        <div class="col-md-8">
-                                            <asp:TextBox ID="txtPatientID" runat="server" CssClass="form-control common-font rounded" />
+                                            <asp:TextBox ID="txtPatientID" runat="server" CssClass="form-control common-font rounded-0" />
                                         </div>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                                             <label class="small-font font-weight-normal">Name:</label>
                                         </div>
                                         <div class="col-md-8">
-                                            <asp:TextBox ID="txtName" runat="server" CssClass="form-control common-font rounded" />
+                                            <asp:TextBox ID="txtName" runat="server" CssClass="form-control common-font rounded-0" />
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@
                                             <label class="small-font font-weight-normal">NIC:</label>
                                         </div>
                                         <div class="col-md-8">
-                                            <asp:TextBox ID="txtNIC" runat="server" CssClass="form-control common-font rounded" />
+                                            <asp:TextBox ID="txtNIC" runat="server" CssClass="form-control common-font rounded-0" />
                                         </div>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@
                                             <label class="small-font font-weight-normal">Phone/Mobile:</label>
                                         </div>
                                         <div class="col-md-8">
-                                            <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control common-font rounded" />
+                                            <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control common-font rounded-0" />
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@
                                             <label class="small-font font-weight-normal">Gender:</label>
                                         </div>
                                         <div class="col-md-8">
-                                        <asp:DropDownList ID="ddlSex" runat="server" CssClass="form-control common-font rounded">
+                                        <asp:DropDownList ID="ddlSex" runat="server" CssClass="form-control common-font rounded-0">
                                             <asp:ListItem Value="" Text="---Select Gender---" />
                                             <asp:ListItem Value="Male" Text="Male" />
                                             <asp:ListItem Value="Female" Text="Female" />
@@ -101,7 +101,7 @@
                                             <label class="small-font font-weight-normal">Email:</label>
                                         </div>
                                         <div class="col-md-8">
-                                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control common-font rounded" />
+                                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control common-font rounded-0" />
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +114,7 @@
         </div>
         <div class="col-md-8">
             <!-- Dropdown for selecting Center -->
-            <asp:Button ID="btnCenter" runat="server" CssClass="btn btn-default btn-sm dropdown-toggle form-control common-font rounded"
+            <asp:Button ID="btnCenter" runat="server" CssClass="btn btn-sm dropdown-toggle form-control common-font rounded-0-0 customGrey-btn text-dark border"
                         Text="801,1001,1401,1501,2301" data-toggle="dropdown" />
 
             <!-- Dropdown Menu -->
@@ -177,7 +177,7 @@
                                             <label class="small-font font-weight-normal">Username:</label>
                                         </div>
                                         <div class="col-md-8">
-                                            <input class="form-control common-font rounded" type="text">
+                                            <input class="form-control common-font rounded-0" type="text">
                                         </div>
                                     </div>
                                 </div>
@@ -192,15 +192,15 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label class="small-font text-dark font-weight-normal">From Date:</label>
-                                    <asp:TextBox ID="txtFromDate" runat="server" CssClass="form-control common-font rounded" TextMode="Date" />
+                                    <asp:TextBox ID="txtFromDate" runat="server" CssClass="form-control common-font rounded-0" TextMode="Date" />
                                 </div>
                                 <div class="col-md-3">
                                     <label class="small-font text-dark font-weight-normal">To Date:</label>
-                                    <asp:TextBox ID="txtToDate" runat="server" CssClass="form-control common-font rounded" TextMode="Date" />
+                                    <asp:TextBox ID="txtToDate" runat="server" CssClass="form-control common-font rounded-0" TextMode="Date" />
                                 </div>
                                 <div class="col-md-4"></div>
                                 <div class="col-md-2">
-<asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn bg-blueGradient text-white float-right" OnClick="btnSearch_Click" />
+<asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm float-right" OnClick="btnSearch_Click" />
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
             <asp:Button 
                 ID="btnViewTest" 
                 runat="server" 
-                CssClass="btn bg-blueGradient text-white mr-2" 
+                CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm mr-2" 
                 Text="View Tests"  
                 CommandName="ViewTest" 
                 CommandArgument='<%# Eval("ID") %>' 
@@ -271,7 +271,7 @@
             <asp:Button 
                 ID="btnApprove" 
                 runat="server" 
-                CssClass="btn btn-success" 
+                CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" 
                 Text="Report"  
                 CommandName="Approve" 
                 CommandArgument='<%# Eval("ID") %>' 
@@ -291,10 +291,10 @@
             <span>Page <%= (GridView1.PageIndex + 1) %> of <%= GridView1.PageCount %> </span>
         </div>
         <div class="pagination-right">
-            <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn bg-blueGradient text-white" OnClick="PreviousPageButton_Click" 
+            <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="PreviousPageButton_Click" 
                 Enabled="<%# GridView1.PageIndex > 0 %>" />
             
-            <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn bg-blueGradient text-white" OnClick="NextPageButton_Click" 
+            <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="NextPageButton_Click" 
                 Enabled="<%# GridView1.PageIndex < GridView1.PageCount - 1 %>" />
         </div>
         <div class="pagination-bottom">
@@ -305,7 +305,7 @@
 
 </asp:GridView>
             <asp:Panel ID="pnlTestResults" runat="server" Visible="false" CssClass="mt-3">
-                            <asp:GridView ID="gvTestResults" runat="server" CssClass="table table-bordered table-hover" AutoGenerateColumns="False">
+                            <asp:GridView ID="gvTestResults" runat="server" CssClass="table table-bordered table-sm table-hover common-font" AutoGenerateColumns="False" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                 <Columns>
                                     <asp:BoundField DataField="ID" HeaderText="ID" />
                                     <asp:BoundField DataField="Code" HeaderText="Code" />
@@ -326,7 +326,7 @@
                                              <asp:Button 
                                                             ID="btnRetake" 
                                                             runat="server" 
-                                                            CssClass="btn btn-dark" 
+                                                            CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" 
                                                             Text="Retake"  
                                                             CommandName="Retake" 
                                                             CommandArgument='<%#  Eval("ID") %>' 
@@ -341,7 +341,7 @@
                                         ShowEditButton="true" OnRowEditing="gvAddResult_RowEditing" 
                                         OnRowCancelingEdit="gvAddResult_RowCancelingEdit" 
                                         OnRowUpdating="gvAddResult_RowUpdating" 
-                                        CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="header-style">
+                                        CssClass="table table-bordered table-sm table-hover common-font" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                         <Columns>
                                             <asp:BoundField DataField="TestID" HeaderText="Test ID" ReadOnly="true"  />
                                             <asp:BoundField DataField="Name" HeaderText="Test Name" ReadOnly="true" Visible="false"/>
@@ -372,7 +372,7 @@
                                                         <asp:Button 
                                                             ID="btnApprove" 
                                                             runat="server" 
-                                                            CssClass="btn btn-success" 
+                                                            CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" 
                                                             Text="Approve"  
                                                             CommandName="Approve" 
                                                             CommandArgument='<%# Eval("TestID") %>' 

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmAddTest.aspx.cs" Inherits="Site_frmAddTest" %>
+<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmAddTest.aspx.cs" Inherits="Site_frmAddTest" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">     
     <asp:ScriptManager ID="ScriptManager2" runat="server" EnablePartialRendering="true" />
     
@@ -266,7 +266,7 @@
                                         </asp:DropDownList>
                                     </div>
 
-                                    <table class="table table responsive border">
+                                    <table class="table table-bordered table-sm table-hover">
                                         <thead class="font-weight-bold small-font bg-light">
                                             <tr>
                                                 <th>Test ID</th>
@@ -290,13 +290,13 @@
                                                 <td>
                                                     <asp:TextBox runat="server" ID="RepDate" CssClass="form-control common-font" TextMode="DateTimeLocal" /></td>
                                                 <td>
-                                                    <asp:Button runat="server" CssClass="btn-green-plus" ID="btnAddTest" Text="+" OnClick="btnAddTest_Click" /></td>
+                                                    <asp:Button runat="server" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" ID="btnAddTest" Text="+" OnClick="btnAddTest_Click" /></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                         <ContentTemplate>
-                                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-sm table-hover"
+                                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-sm table-hover common-font" HeaderStyle-CssClass="bg-light font-weight-bold small-font"
                                                 AllowPaging="True" PageSize="5" PagerSettings-Mode="NextPrevious" PagerSettings-Position="Bottom"
                                                 OnPageIndexChanging="GridView1_PageIndexChanging">
                                                 <Columns>
@@ -330,7 +330,7 @@
                                                                 <span>Page <%= (GridView1.PageIndex + 1) %> of <%= GridView1.PageCount %> </span>
                                                             </div>
                                                             <div class="pagination-right">
-                                                                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-secondary" OnClick="PreviousPageButton_Click"
+                                                                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="PreviousPageButton_Click"
                                                                     Enabled="<%# GridView1.PageIndex > 0 %>" />
                                                                 <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary" OnClick="NextPageButton_Click"
                                                                     Enabled="<%# GridView1.PageIndex < GridView1.PageCount - 1 %>" />

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Invoice" Language="C#" AutoEventWireup="true" CodeFile="frmInvoice.aspx.cs" Inherits="Site_frmInvoice" %>
+<%@ Page Title="Lab Invoice" Language="C#" AutoEventWireup="true" CodeFile="frmInvoice.aspx.cs" Inherits="Site_frmInvoice" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -72,8 +72,8 @@
         }
         
         .test-table th {
-            background-color: #0056b3;
-            color: white;
+            background-color: #f8f9fa;
+            color: #212529;
             padding: 8px;
             text-align: left;
         }
@@ -159,7 +159,7 @@
             
             <!-- Test Details -->
             <h3>TEST DETAILS</h3>
-            <table class="test-table">
+            <table class="test-table table table-bordered table-sm table-hover">
                 <thead>
                     <tr>
                         <th>Test Name</th>

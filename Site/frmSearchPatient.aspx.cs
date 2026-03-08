@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
@@ -349,7 +349,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
 
     protected void btnAddTest_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        IButtonControl btn = (IButtonControl)sender;
         string id = btn.CommandArgument;
         string encryptedID = modMain.Encrypt(id);
         // Use the ID value as needed
@@ -360,7 +360,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
 
     protected void btnSaveCase_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        IButtonControl btn = (IButtonControl)sender;
         string id = btn.CommandArgument;
         string encryptedID = modMain.Encrypt(id);
 
@@ -377,15 +377,15 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
             string status = DataBinder.Eval(e.Row.DataItem, "Status").ToString();
             long PatientID = Convert.ToInt64(DataBinder.Eval(e.Row.DataItem, "ID"));
             bool IsDue = IsPaymentRemains(PatientID);
-            // Find buttons
-            Button btnViewTest = (Button)e.Row.FindControl("btnAddTest");
-            Button btnInvoice = (Button)e.Row.FindControl("btnSaveCase");
-            Button btnViewReport = (Button)e.Row.FindControl("btnApprove");
-            Button btnPrescription = (Button)e.Row.FindControl("btnPrescription");
-            Button btnApproveG = (Button)e.Row.FindControl("btnApproveG");
-            Button btnApproveWG = (Button)e.Row.FindControl("btnApproveWG");
-            Button btnApproveWH = (Button)e.Row.FindControl("btnApproveWH");
-            Button btnClearDues = (Button)e.Row.FindControl("btnClearDues");
+            // Find action controls (LinkButton in dropdown)
+            WebControl btnViewTest = (WebControl)e.Row.FindControl("btnAddTest");
+            WebControl btnInvoice = (WebControl)e.Row.FindControl("btnSaveCase");
+            WebControl btnViewReport = (WebControl)e.Row.FindControl("btnApprove");
+            WebControl btnPrescription = (WebControl)e.Row.FindControl("btnPrescription");
+            WebControl btnApproveG = (WebControl)e.Row.FindControl("btnApproveG");
+            WebControl btnApproveWG = (WebControl)e.Row.FindControl("btnApproveWG");
+            WebControl btnApproveWH = (WebControl)e.Row.FindControl("btnApproveWH");
+            WebControl btnClearDues = (WebControl)e.Row.FindControl("btnClearDues");
 
             if (btnViewTest != null && btnInvoice != null && btnViewReport != null)
             {
@@ -414,17 +414,27 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
                         btnViewTest.Visible = true;
                         btnInvoice.Visible = true;
                         btnViewReport.Visible = true;
+                        btnApproveWH.Visible = true;
+                        btnApproveG.Visible = true;
                         btnApproveWG.Visible = true;
+                        if (IsDue)
+                        {
+                            btnClearDues.Visible = true;
+                        }
+                        break;
 
-                       // //if (!IsDue) {
-                       //     btnApproveG.Visible = true;
-                       //     btnApproveWG.Visible = true;
-                       //     btnApproveWH.Visible = true;
-                       //// }
-                       // else
-                       // {
-                       //     btnClearDues.Visible = true;
-                       // }
+                    case "3": // Conducted
+                        btnViewTest.Visible = true;
+                        btnInvoice.Visible = true;
+                        btnViewReport.Visible = true;
+                        btnApproveWH.Visible = true;
+                        btnApproveG.Visible = true;
+                        btnApproveWG.Visible = true;
+                        btnPrescription.Visible = true;
+                        if (IsDue)
+                        {
+                            btnClearDues.Visible = true;
+                        }
                         break;
 
                         // Optionally handle "Conducted" or other status if needed
@@ -439,7 +449,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
     }
     protected void btnApprove_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        IButtonControl btn = (IButtonControl)sender;
         string id = btn.CommandArgument;
         string encryptedID = modMain.Encrypt(id);
 
@@ -456,7 +466,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
 
     protected void btnApproveWH_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        IButtonControl btn = (IButtonControl)sender;
         string id = btn.CommandArgument;
         string encryptedID = modMain.Encrypt(id);
 
@@ -467,7 +477,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
 
     protected void btnApproveG_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        IButtonControl btn = (IButtonControl)sender;
         string id = btn.CommandArgument;
         string encryptedID = modMain.Encrypt(id);
 
@@ -478,7 +488,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
 
     protected void btnApproveWG_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        IButtonControl btn = (IButtonControl)sender;
         string id = btn.CommandArgument;
         string encryptedID = modMain.Encrypt(id);
 
@@ -489,7 +499,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
 
     protected void btnClearDues_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        IButtonControl btn = (IButtonControl)sender;
         long PatientID = Convert.ToInt64(btn.CommandArgument);
         decimal Due = modMain.GetPaymentRemains(PatientID);
         if (Due > 0)

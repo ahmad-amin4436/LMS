@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmManagement.aspx.cs" Inherits="Site_frmManagement" %>
+<%@ Page Title="Lab Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="frmManagement.aspx.cs" Inherits="Site_frmManagement" %>
 
 <%@ Register Src="~/sysCtrl/msg_Box.ascx" TagPrefix="uc1" TagName="msg_Box" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -52,7 +52,7 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <asp:TextBox ID="txtCode" runat="server" CssClass="form-control common-font rounded" />
+                                                    <asp:TextBox ID="txtCode" runat="server" CssClass="form-control common-font rounded-0" />
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
@@ -60,7 +60,7 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <asp:TextBox ID="txtName" runat="server" CssClass="form-control common-font rounded" />
+                                                    <asp:TextBox ID="txtName" runat="server" CssClass="form-control common-font rounded-0" />
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
@@ -95,7 +95,7 @@
 
                                             <div class="col-md-3">   
                                                 <div class="form-group">
-                                                     <asp:TextBox ID="txtSynonyms" runat="server" CssClass="form-control common-font rounded" />
+                                                     <asp:TextBox ID="txtSynonyms" runat="server" CssClass="form-control common-font rounded-0" />
                                                 </div>
                                             </div> 
                                             <div class="col-md-4" style="">
@@ -114,7 +114,7 @@
                                             <div class="col-md-3">   
 
                                                 <div class="form-group">
-                                                     <asp:TextBox ID="txtTestID" runat="server" ReadOnly="true"  CssClass="form-control common-font rounded" />
+                                                     <asp:TextBox ID="txtTestID" runat="server" ReadOnly="true"  CssClass="form-control common-font rounded-0" />
                                                 </div>
                                             </div> 
                                                                                         <div class="col-md-1">
@@ -123,7 +123,7 @@
 
                                             <div class="col-md-3">   
                                                 <div class="form-group">
-                                                     <asp:TextBox ID="txtTemplateID" runat="server" ReadOnly="true"  CssClass="form-control common-font rounded" />
+                                                     <asp:TextBox ID="txtTemplateID" runat="server" ReadOnly="true"  CssClass="form-control common-font rounded-0" />
                                                 </div>
                                             </div> 
                                         </div>
@@ -150,19 +150,19 @@
                                                             <div class="col-md-4">
                                                                 <label for="" class="small-font font-weight-normal">Report Name:</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox ID="txtReportName" runat="server" CssClass="form-control common-font rounded" />
+                                                                    <asp:TextBox ID="txtReportName" runat="server" CssClass="form-control common-font rounded-0" />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label for="" class="small-font font-weight-normal">Test Heading:</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox ID="txtHeading" runat="server" CssClass="form-control common-font rounded" />
+                                                                    <asp:TextBox ID="txtHeading" runat="server" CssClass="form-control common-font rounded-0" />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label for="" class="small-font font-weight-normal">Report Group:</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox ID="txtReportGroup" runat="server" CssClass="form-control common-font rounded"/>
+                                                                    <asp:TextBox ID="txtReportGroup" runat="server" CssClass="form-control common-font rounded-0"/>
                                           
                                                                 </div>
                                                             </div>
@@ -197,13 +197,13 @@
                                                             <div class="col-md-4">
                                                                 <label for="" class="small-font font-weight-normal">Specimen Req. Qty.:</label>
                                                                 <div class="form-group">
-                                                                     <asp:TextBox ID="txtSpecimenReqQty" runat="server" CssClass="form-control common-font rounded" />
+                                                                     <asp:TextBox ID="txtSpecimenReqQty" runat="server" CssClass="form-control common-font rounded-0" />
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4">
                                                                 <label for="" class="small-font font-weight-normal">Sort Order:</label>
                                                                 <div class="form-group">
-                                                                     <asp:TextBox ID="txtSortOrder" runat="server" CssClass="form-control common-font rounded" />
+                                                                     <asp:TextBox ID="txtSortOrder" runat="server" CssClass="form-control common-font rounded-0" />
                                                                 </div>
                                                             </div> 
                                                             <div class="col-md-4" style="margin-top:20px">
@@ -226,7 +226,7 @@
                                                             <div class="col-md-4">
                                                                 <label for="" class="small-font font-weight-normal">Unit:</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control common-font rounded"/>
+                                                                    <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control common-font rounded-0"/>
                                           
                                                                 </div>
                                                             </div>
@@ -257,37 +257,37 @@
 <div class="col-md-4">
     <label for="" class="small-font font-weight-normal">From Age:</label>
     <div class="form-group">
-        <asp:TextBox ID="txtFromAge" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+        <asp:TextBox ID="txtFromAge" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
     </div>
 </div>
 <div class="col-md-4">
     <label for="" class="small-font font-weight-normal">To Age:</label>
     <div class="form-group">
-        <asp:TextBox ID="txtToAge" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+        <asp:TextBox ID="txtToAge" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
     </div>
 </div>
 <div class="col-md-4">
     <label for="" class="small-font font-weight-normal">From Value:</label>
     <div class="form-group">
-        <asp:TextBox ID="txtFromValue" runat="server" CssClass="form-control common-font rounded" />
+        <asp:TextBox ID="txtFromValue" runat="server" CssClass="form-control common-font rounded-0" />
     </div>
 </div>
 <div class="col-md-4">
     <label for="" class="small-font font-weight-normal">To Value:</label>
     <div class="form-group">
-        <asp:TextBox ID="txtToValue" runat="server" CssClass="form-control common-font rounded" />
+        <asp:TextBox ID="txtToValue" runat="server" CssClass="form-control common-font rounded-0" />
     </div>
 </div>
 <div class="col-md-4">
     <label for="" class="small-font font-weight-normal">Remarks:</label>
     <div class="form-group">
-        <asp:TextBox ID="txtRemarks" runat="server" CssClass="form-control common-font rounded" TextMode="MultiLine" Rows="2" />
+        <asp:TextBox ID="txtRemarks" runat="server" CssClass="form-control common-font rounded-0" TextMode="MultiLine" Rows="2" />
     </div>
 </div>
                                                             <div class="col-md-4">
                                                                 <label for="" class="small-font font-weight-normal">Rate:</label>
                                                                 <div class="form-group">
-                                                                     <asp:TextBox ID="txtRate" runat="server" CssClass="form-control common-font rounded" />
+                                                                     <asp:TextBox ID="txtRate" runat="server" CssClass="form-control common-font rounded-0" />
                                                                 </div>
                                                             </div> 
                                                         </div>
@@ -369,7 +369,7 @@
                                                     <br/>
                                                     <br/>
                                                      <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" OnTextChanged="txtSearch_TextChanged" Placeholder="Search Code or Name"></asp:TextBox>
-                                                <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary" Text="Search" OnClick="btnSearch_Click" CausesValidation="false" />
+                                                <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" Text="Search" OnClick="btnSearch_Click" CausesValidation="false" />
                                                     <div class="container d-flex justify-content-center align-items-center" style="margin-top:10px">
                                                        
 <asp:GridView ID="GridView1" runat="server" 
@@ -379,7 +379,7 @@
     OnPageIndexChanging="GridView1_PageIndexChanging"
     PagerSettings-Mode="NumericFirstLast"
     PagerSettings-Position="Bottom"
-    CssClass="table table-bordered table-sm table-hover">
+    CssClass="table table-bordered table-sm table-hover common-font" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                             <Columns>
         
                                                 <asp:BoundField DataField="ID" HeaderText="ID" />
@@ -400,7 +400,7 @@
                                                             <asp:Button 
                                                                 ID="btnEditTest" 
                                                                 runat="server" 
-                                                                CssClass="btn-dark" 
+                                                                CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" 
                                                                 Text="Edit Test"  
                                                                 CommandName="EditTest" 
                                                                 CommandArgument='<%# Eval("ID") %>' 
@@ -415,7 +415,7 @@
                                                     <span>Page <%= (GridView1.PageIndex + 1) %> of <%= GridView1.PageCount %> </span>
                                                 </div>
                                                 <div class="pagination-right">
-                                                    <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-secondary" OnClick="PreviousPageButton_Click" 
+                                                    <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="PreviousPageButton_Click" 
                                                         Enabled="<%# GridView1.PageIndex > 0 %>" CausesValidation="false" />
             
                                                     <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary" OnClick="NextPageButton_Click" 
@@ -438,7 +438,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtParameterName" runat="server" CssClass="form-control common-font rounded" />
+                                                                            <asp:TextBox ID="txtParameterName" runat="server" CssClass="form-control common-font rounded-0" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -446,7 +446,7 @@
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtParameterReportName" runat="server" CssClass="form-control common-font rounded" />
+                                                                            <asp:TextBox ID="txtParameterReportName" runat="server" CssClass="form-control common-font rounded-0" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -467,7 +467,7 @@
 
                                                                     <div class="col-md-3">   
                                                                         <div class="form-group">
-                                                                            <asp:TextBox ID="txtParameterSortOrder" runat="server" CssClass="form-control common-font rounded" />
+                                                                            <asp:TextBox ID="txtParameterSortOrder" runat="server" CssClass="form-control common-font rounded-0" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-1">
@@ -476,7 +476,7 @@
 
                                                                     <div class="col-md-3">   
                                                                         <div class="form-group">
-                                                                             <asp:TextBox ID="txtParameterFormat" runat="server" CssClass="form-control common-font rounded" />
+                                                                             <asp:TextBox ID="txtParameterFormat" runat="server" CssClass="form-control common-font rounded-0" />
                                                                         </div>
                                                                     </div> 
                                                                    <div class="col-md-1">
@@ -485,7 +485,7 @@
 
                                                                         <div class="col-md-3">   
                                                                             <div class="form-group">
-                                                                                 <asp:TextBox ID="txtParameterUnit" runat="server" CssClass="form-control common-font rounded" />
+                                                                                 <asp:TextBox ID="txtParameterUnit" runat="server" CssClass="form-control common-font rounded-0" />
                                                                             </div>
                                                                         </div> 
                                                                
@@ -502,7 +502,7 @@
                                                     OnRowUpdating="GridViewParameter_RowUpdating"
                                                     OnPageIndexChanging="GridViewParameter_PageIndexChanging"
                                                     AllowPaging="True" PageSize="5" 
-                                                    CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="header-style">
+                                                    CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="ID">
                                                             <EditItemTemplate>
@@ -586,7 +586,7 @@
                                                         OnRowEditing="gvNormalValues2_RowEditing" 
                                                         OnRowCancelingEdit="gvNormalValues2_RowCancelingEdit" 
                                                         OnRowUpdating="gvNormalValues2_RowUpdating"
-                                                        CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="header-style">
+                                                        CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                                         <Columns>
                                                             <asp:TemplateField HeaderText="Gender">
                                                                 <EditItemTemplate>
@@ -667,7 +667,7 @@
                                                             OnRowEditing="gvProfileTest_RowEditing"
                                                             OnRowCancelingEdit="gvProfileTest_RowCancelingEdit"
                                                             OnRowUpdating="gvProfileTest_RowUpdating"
-                                                        CssClass="table table-bordered table-sm table-hover">
+                                                        CssClass="table table-bordered table-sm table-hover common-font" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
     
                                                             <Columns>
                                                                 <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" />
@@ -689,7 +689,7 @@
                                                         OnRowEditing="gvNormalValues_RowEditing" 
                                                         OnRowCancelingEdit="gvNormalValues_RowCancelingEdit" 
                                                         OnRowUpdating="gvNormalValues_RowUpdating"
-                                                        CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="header-style">
+                                                        CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                                         <Columns>
                                                             <asp:TemplateField HeaderText="Gender">
                                                                 <EditItemTemplate>
@@ -757,7 +757,7 @@
                                                         OnRowEditing="gvCuttOffValues_RowEditing" 
                                                         OnRowCancelingEdit="gvCuttOffValues_RowCancelingEdit" 
                                                         OnRowUpdating="gvCuttOffValues_RowUpdating"
-                                                        CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="header-style">
+                                                        CssClass="table table-bordered table-sm table-hover" HeaderStyle-CssClass="bg-light font-weight-bold small-font">
                                                         <Columns>
                                                             <asp:TemplateField HeaderText="Test Code">
                                                                 <EditItemTemplate>
@@ -825,19 +825,19 @@
             <div class="col-md-2">
                 <label for="" class="small-font font-weight-normal">Code:</label>
                 <div class="form-group">
-                    <asp:TextBox ID="txtID" runat="server" CssClass="form-control common-font rounded" />
+                    <asp:TextBox ID="txtID" runat="server" CssClass="form-control common-font rounded-0" />
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="" class="small-font font-weight-normal">Name:</label>
                 <div class="form-group">
-                    <asp:TextBox ID="txtCenterName" runat="server" CssClass="form-control common-font rounded" />
+                    <asp:TextBox ID="txtCenterName" runat="server" CssClass="form-control common-font rounded-0" />
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="" class="small-font font-weight-normal">Type:</label>
                 <div class="form-group">
-                    <asp:DropDownList ID="ddlCenterType" runat="server" CssClass="form-control common-font rounded">
+                    <asp:DropDownList ID="ddlCenterType" runat="server" CssClass="form-control common-font rounded-0">
                         <asp:ListItem Value="Company" Text="Company" />
                         <asp:ListItem Value="Franchise" Text="Franchise" />
                     </asp:DropDownList>
@@ -846,7 +846,7 @@
             <div class="col-md-4">
                 <label for="" class="small-font font-weight-normal">RateTypeID:</label>
                 <div class="form-group">
-                    <asp:DropDownList ID="ddlRateTypeID" runat="server" CssClass="form-control common-font rounded mySelect2">
+                    <asp:DropDownList ID="ddlRateTypeID" runat="server" CssClass="form-control common-font rounded-0 mySelect2">
                     </asp:DropDownList>
                 </div>
             </div>
@@ -869,7 +869,7 @@
             <div class="col-md-12">
                 <label for="" class="small-font font-weight-normal">Description:</label>
                 <div class="form-group">
-                    <asp:TextBox ID="txtDescription" runat="server" CssClass="form-control common-font rounded" />
+                    <asp:TextBox ID="txtDescription" runat="server" CssClass="form-control common-font rounded-0" />
                 </div>
             </div>
         </div>
@@ -889,13 +889,13 @@
                         <div class="col-md-8">
                             <label for="" class="small-font font-weight-normal">Addresss:</label>
                             <div class="form-group">
-                                <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control common-font rounded" />
+                                <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control common-font rounded-0" />
                             </div>
                         </div>
                         <div class="col-md-4">
                             <label for="" class="small-font font-weight-normal">Country:</label>
                             <div class="form-group">
-                                <asp:DropDownList ID="ddlCountry" runat="server" CssClass="form-control common-font rounded">
+                                <asp:DropDownList ID="ddlCountry" runat="server" CssClass="form-control common-font rounded-0">
                                     <asp:ListItem Value="Pakistan" Text="Pakistan" />
                                     <asp:ListItem Value="USA" Text="USA" />
                                     <asp:ListItem Value="UK" Text="UK" />
@@ -905,7 +905,7 @@
                         <div class="col-md-4">
                             <label for="" class="small-font font-weight-normal">City:</label>
                             <div class="form-group">
-                                <asp:DropDownList ID="ddlCity" runat="server" CssClass="form-control common-font rounded">
+                                <asp:DropDownList ID="ddlCity" runat="server" CssClass="form-control common-font rounded-0">
                                     <asp:ListItem Value="Lahore" Text="Lahore" />
                                     <asp:ListItem Value="Multan" Text="Multan" />
                                     <asp:ListItem Value="Karachi" Text="Karachi" />
@@ -915,14 +915,14 @@
                         <div class="col-md-4">
                             <label for="" class="small-font font-weight-normal">Phone:</label>
                             <div class="form-group">
-                                <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control common-font rounded"/>
+                                <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control common-font rounded-0"/>
                             </div>
                         </div>
                         
                         <div class="col-md-4">
                             <label for="" class="small-font font-weight-normal">Email:</label>
                             <div class="form-group">
-                                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control common-font rounded"/>
+                                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control common-font rounded-0"/>
                             </div>
                         </div>
                     </div>
@@ -941,7 +941,7 @@
                             <div class="col-md-4">
                                 <label for="" class="small-font font-weight-normal">Max Discount Limit:</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtMaxDiscLimit" runat="server" CssClass="form-control common-font rounded"/>
+                                    <asp:TextBox ID="txtMaxDiscLimit" runat="server" CssClass="form-control common-font rounded-0"/>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -950,13 +950,13 @@
                             <div class="col-md-2">
                                 <label for="" class="small-font font-weight-normal">Start From:</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtStartDate" runat="server" CssClass="form-control common-font rounded" TextMode="Number" Min="1" Max="1000000000" ReadOnly="true" />
+                                    <asp:TextBox ID="txtStartDate" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" Min="1" Max="1000000000" ReadOnly="true" />
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <label for="" class="small-font font-weight-normal">End At:</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtEndDate" runat="server" CssClass="form-control common-font rounded" TextMode="Number" Min="1" Max="1000000000" />
+                                    <asp:TextBox ID="txtEndDate" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" Min="1" Max="1000000000" />
                                 </div>
                             </div>
                         </div>
@@ -1214,7 +1214,7 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Code:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtReferenceCode" runat="server" CssClass="form-control common-font rounded" onkeypress="return isNumber(event)" />
+                        <asp:TextBox ID="txtReferenceCode" runat="server" CssClass="form-control common-font rounded-0" onkeypress="return isNumber(event)" />
                        <%-- <asp:RequiredFieldValidator ID="rfvCode" runat="server" ControlToValidate="txtReferenceCode" 
                             ErrorMessage="Code is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>--%>
                     </div>
@@ -1223,7 +1223,7 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Name:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtReferenceName" runat="server" CssClass="form-control common-font rounded" onkeypress="return isAlpha(event)" />
+                        <asp:TextBox ID="txtReferenceName" runat="server" CssClass="form-control common-font rounded-0" onkeypress="return isAlpha(event)" />
                         <%--<asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtReferenceName" 
                             ErrorMessage="Name is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>--%>
                     </div>
@@ -1232,7 +1232,7 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Address:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtReferenceAddress" runat="server" CssClass="form-control common-font rounded" />
+                        <asp:TextBox ID="txtReferenceAddress" runat="server" CssClass="form-control common-font rounded-0" />
                         <%--<asp:RequiredFieldValidator ID="rfvAddress" runat="server" ControlToValidate="txtReferenceAddress" 
                             ErrorMessage="Address is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>--%>
                     </div>
@@ -1241,7 +1241,7 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">City:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtCity" runat="server" CssClass="form-control common-font rounded" />
+                        <asp:TextBox ID="txtCity" runat="server" CssClass="form-control common-font rounded-0" />
                        <%-- <asp:RequiredFieldValidator ID="rfvCity" runat="server" ControlToValidate="txtCity" 
                             ErrorMessage="City is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>--%>
                     </div>
@@ -1250,7 +1250,7 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Phone:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtReferencePhone" runat="server" CssClass="form-control common-font rounded" />
+                        <asp:TextBox ID="txtReferencePhone" runat="server" CssClass="form-control common-font rounded-0" />
                         <%--<asp:RequiredFieldValidator ID="rfvPhone" runat="server" ControlToValidate="txtReferencePhone" 
                             ErrorMessage="Phone is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="revPhone" runat="server" ControlToValidate="txtReferencePhone"
@@ -1261,7 +1261,7 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Email:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtReferenceEmail" runat="server" CssClass="form-control common-font rounded" />
+                        <asp:TextBox ID="txtReferenceEmail" runat="server" CssClass="form-control common-font rounded-0" />
 <%--                        <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtReferenceEmail" 
                             ErrorMessage="Email is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtReferenceEmail"
@@ -1295,7 +1295,7 @@ function GenerateCenterTable() {
                             <div class="col-md-4">
                                 <label for="" class="small-font font-weight-normal">Payment Mode:</label>
                                 <div class="form-group">
-                                    <asp:DropDownList ID="ddlPaymentMode" runat="server" CssClass="form-control common-font rounded">
+                                    <asp:DropDownList ID="ddlPaymentMode" runat="server" CssClass="form-control common-font rounded-0">
                                         <asp:ListItem Value="Cash" Text="Cash" />
                                         <asp:ListItem Value="Credit" Text="Credit" />
                                         <asp:ListItem Value="Online" Text="Online" />
@@ -1306,7 +1306,7 @@ function GenerateCenterTable() {
                             <div class="col-md-4">
                                 <label for="" class="small-font font-weight-normal">Credit Limit:</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtCreditLimit" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                    <asp:TextBox ID="txtCreditLimit" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                     <%--<asp:RequiredFieldValidator ID="rfvCreditLimit" runat="server" ControlToValidate="txtCreditLimit" 
                                         ErrorMessage="Credit Limit is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>--%>
                                 </div>
@@ -1315,7 +1315,7 @@ function GenerateCenterTable() {
                             <div class="col-md-4">
                                 <label for="" class="small-font font-weight-normal">Credit Days:</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtCreditDays" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                    <asp:TextBox ID="txtCreditDays" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                   <%--  <asp:RequiredFieldValidator ID="rfvCreditDays" runat="server" ControlToValidate="txtCreditDays" 
                                         ErrorMessage="Credit Days is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>--%>
                                 </div>
@@ -1324,7 +1324,7 @@ function GenerateCenterTable() {
                             <div class="col-md-4">
                                 <label for="" class="small-font font-weight-normal">Current Balance:</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtCurrentBalance" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                    <asp:TextBox ID="txtCurrentBalance" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                  <%--   <asp:RequiredFieldValidator ID="rfvCurrentBalance" runat="server" ControlToValidate="txtCurrentBalance" 
                                         ErrorMessage="Current Balance is required" ForeColor="Red" Display="Dynamic" CssClass="small-font"></asp:RequiredFieldValidator>--%>
                                 </div>
@@ -1333,7 +1333,7 @@ function GenerateCenterTable() {
                             <div class="col-md-4">
                                 <label for="" class="small-font font-weight-normal">Rate Type:</label>
                                 <div class="form-group">
-                                    <asp:DropDownList ID="ddlRateTypeReferemce" runat="server" CssClass="form-control common-font rounded">
+                                    <asp:DropDownList ID="ddlRateTypeReferemce" runat="server" CssClass="form-control common-font rounded-0">
                                         <asp:ListItem Value="1" Text="Fixed" />
                                         <asp:ListItem Value="2" Text="Variable" />
                                         <asp:ListItem Value="3" Text="Custom" />
@@ -1385,14 +1385,14 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Name:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtRateTypesName" runat="server" CssClass="form-control common-font rounded" />
+                        <asp:TextBox ID="txtRateTypesName" runat="server" CssClass="form-control common-font rounded-0" />
                     </div>
                 </div>
                 <!-- Description Field -->
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Description:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtRateTypesDescription" runat="server" CssClass="form-control common-font rounded" />
+                        <asp:TextBox ID="txtRateTypesDescription" runat="server" CssClass="form-control common-font rounded-0" />
                     </div>
                 </div>
                 <!-- Status Checkbox -->
@@ -1429,7 +1429,7 @@ function GenerateCenterTable() {
                 <span>Page <%= (GridViewRateTypes.PageIndex + 1) %> of <%= GridViewRateTypes.PageCount %> </span>
             </div>
             <div class="pagination-right">
-                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-secondary" OnClick="RateTypesPreviousPageButton_Click" 
+                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="RateTypesPreviousPageButton_Click" 
                     Enabled="<%# GridViewRateTypes.PageIndex > 0 %>" CausesValidation="false" />
                 <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary" OnClick="RateTypesNextPageButton_Click" 
                     Enabled="<%# GridViewRateTypes.PageIndex < GridViewRateTypes.PageCount - 1 %>" CausesValidation="false" />
@@ -1451,7 +1451,7 @@ function GenerateCenterTable() {
                 <div class="col-md-4">
                     <label for="" class="small-font font-weight-normal">Name:</label>
                     <div class="form-group">
-                        <asp:TextBox ID="txtDepartmentName" runat="server" CssClass="form-control common-font rounded" />
+                        <asp:TextBox ID="txtDepartmentName" runat="server" CssClass="form-control common-font rounded-0" />
                     </div>
                 </div>
                 <!-- Status Checkbox -->
@@ -1489,7 +1489,7 @@ function GenerateCenterTable() {
                 <span>Page <%= (GridViewTestDepartment.PageIndex + 1) %> of <%= GridViewTestDepartment.PageCount %> </span>
             </div>
             <div class="pagination-right">
-                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-secondary" OnClick="TestDepartmentPreviousPageButton_Click" 
+                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="TestDepartmentPreviousPageButton_Click" 
                     Enabled="<%# GridViewTestDepartment.PageIndex > 0 %>" CausesValidation="false" />
                 <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary" OnClick="TestDepartmentNextPageButton_Click" 
                     Enabled="<%# GridViewTestDepartment.PageIndex < GridViewTestDepartment.PageCount - 1 %>" CausesValidation="false" />
@@ -1564,7 +1564,7 @@ function GenerateCenterTable() {
                 <span>Page <%= (GridViewiLockUser.PageIndex + 1) %> of <%= GridViewiLockUser.PageCount %> </span>
             </div>
             <div class="pagination-right">
-                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-secondary" OnClick="iLockUserPreviousPageButton_Click" 
+                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" OnClick="iLockUserPreviousPageButton_Click" 
                     Enabled="<%# GridViewiLockUser.PageIndex > 0 %>" CausesValidation="false" />
                 <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary" OnClick="iLockUserNextPageButton_Click" 
                     Enabled="<%# GridViewiLockUser.PageIndex < GridViewiLockUser.PageCount - 1 %>" CausesValidation="false" />
@@ -1656,17 +1656,17 @@ function GenerateCenterTable() {
                            <!-- Username -->
                             <div class="col-md-4">
                                 <label for="txtUserName" class="small-font font-weight-normal">Username:</label>
-                                <asp:TextBox ID="txtUserName" runat="server" CssClass="form-control common-font rounded" />
+                                <asp:TextBox ID="txtUserName" runat="server" CssClass="form-control common-font rounded-0" />
                             </div>
                             <!-- First Name -->
                             <div class="col-md-4">
                                 <label for="txtFirstName" class="small-font font-weight-normal">First Name:</label>
-                                <asp:TextBox ID="txtFirstName" runat="server" CssClass="form-control common-font rounded" />
+                                <asp:TextBox ID="txtFirstName" runat="server" CssClass="form-control common-font rounded-0" />
                             </div>
                             <!-- Last Name -->
                             <div class="col-md-4">
                                 <label for="txtLastName" class="small-font font-weight-normal">Last Name:</label>
-                                <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control common-font rounded" />
+                                <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control common-font rounded-0" />
                             </div>
                             <!-- Disabled -->
                             <div class="col-md-4" style="margin-top:20px">
@@ -1680,31 +1680,31 @@ function GenerateCenterTable() {
                             <!-- Password -->
                             <div class="col-md-4">
                                 <label for="txtPassword" class="small-font font-weight-normal">Password:</label>
-                                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control common-font rounded" TextMode="Password" />
+                                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control common-font rounded-0" TextMode="Password" />
                             </div>
                             <!-- Email -->
                             <div class="col-md-4">
                                 <label for="txtEmail" class="small-font font-weight-normal">Email:</label>
-                                <asp:TextBox ID="txtuserEmail" runat="server" CssClass="form-control common-font rounded" />
+                                <asp:TextBox ID="txtuserEmail" runat="server" CssClass="form-control common-font rounded-0" />
                             </div>
                             <!-- Mobile -->
                             <div class="col-md-4">
                                 <label for="txtMobile" class="small-font font-weight-normal">Mobile:</label>
-                                <asp:TextBox ID="txtuserMobile" runat="server" CssClass="form-control common-font rounded" />
+                                <asp:TextBox ID="txtuserMobile" runat="server" CssClass="form-control common-font rounded-0" />
                             </div>
                             <!-- City -->
                             <div class="col-md-4">
                                 <label for="txtCity" class="small-font font-weight-normal">City:</label>
-                                <asp:TextBox ID="txtuserCity" runat="server" CssClass="form-control common-font rounded" />
+                                <asp:TextBox ID="txtuserCity" runat="server" CssClass="form-control common-font rounded-0" />
                             </div>
                             <div class="col-md-4">
     <label for="ddlCenter" class="small-font font-weight-normal">Center:</label>
-    <asp:DropDownList ID="ddlCenter" runat="server" CssClass="form-control common-font rounded" SelectionMode="Multiple" multiple="multiple">
+    <asp:DropDownList ID="ddlCenter" runat="server" CssClass="form-control common-font rounded-0" SelectionMode="Multiple" multiple="multiple">
     </asp:DropDownList>
 </div>
                             <div class="col-md-4">
     <label for="ddlRoles" class="small-font font-weight-normal">Roles:</label>
-    <asp:DropDownList ID="ddlRoles" runat="server" CssClass="form-control common-font rounded">
+    <asp:DropDownList ID="ddlRoles" runat="server" CssClass="form-control common-font rounded-0">
     </asp:DropDownList>
 </div>
                         </div>
@@ -1756,55 +1756,55 @@ function GenerateCenterTable() {
                                     <div class="col-md-4">
                                         <label for="" class="small-font font-weight-normal">Name:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtRateTypeName" runat="server" CssClass="form-control common-font rounded" />
+                                            <asp:TextBox ID="txtRateTypeName" runat="server" CssClass="form-control common-font rounded-0" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">Special:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtSpecial" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtSpecial" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">Routine:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtRoutine" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtRoutine" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">Rebate:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtRebate" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtRebate" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">Biopsy:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtBiopsy" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtBiopsy" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">PCR:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtPCR" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtPCR" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">Others:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtOthers" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtOthers" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">Radiology:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtRadiology" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtRadiology" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                                     <div class="col-md-1">
                                         <label for="" class="small-font font-weight-normal">Outside:</label>
                                         <div class="form-group">
-                                            <asp:TextBox ID="txtOutside" runat="server" CssClass="form-control common-font rounded" TextMode="Number" />
+                                            <asp:TextBox ID="txtOutside" runat="server" CssClass="form-control common-font rounded-0" TextMode="Number" />
                                         </div>
                                     </div>
                      <div class="col-md-6" style="margin-top:20px">
