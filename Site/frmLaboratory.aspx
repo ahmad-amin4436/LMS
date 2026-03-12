@@ -243,59 +243,56 @@
                                 <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn bg-blueGradient text-white float-right move-up" OnClick="btnSearch_Click" />
 
                                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-sm table-hover"
-    AllowPaging="True" PageSize="5" 
-    PagerSettings-Mode="NextPrevious" PagerSettings-Position="Bottom"
-    OnPageIndexChanging="GridView1_PageIndexChanging">
-    <Columns>
-        
-        <asp:BoundField DataField="ID" HeaderText="ID" />
-        <asp:BoundField DataField="PatientNumber" HeaderText="Patient Number" />
-        <asp:BoundField DataField="FirstName" HeaderText="Name" />
-        <asp:BoundField DataField="Location" HeaderText="Location" />
-        <asp:BoundField DataField="DateRegistered" HeaderText="Date Registered" DataFormatString="{0:MM/dd/yyyy}" />
-        <asp:BoundField DataField="Sex" HeaderText="Gender" />
-        <asp:BoundField DataField="NIC" HeaderText="NIC" />
-        <asp:BoundField DataField="Mobile" HeaderText="Mobile #" />
-        <asp:BoundField DataField="DateOfBirth" HeaderText="Date of Birth" />
-        <asp:BoundField DataField="City" HeaderText="City" />
-        <asp:BoundField DataField="BloodGroup" HeaderText="Blood Group" />
-        <asp:TemplateField HeaderText="Actions">
-            <ItemTemplate>
-<%--               <asp:Button ID="EditButton" runat="server" CssClass="btn-primary" Text="Edit" CommandName="Edit" CommandArgument='<%# Eval("ID") %>' />--%>
-                    <asp:Button 
-                        ID="btnViewTest" 
-                        runat="server" 
-                        CssClass="btn bg-blueGradient text-white float-right" 
-                        Text="Tests"  
-                        CommandName="ViewTest" 
-                        CommandArgument='<%# Eval("ID") %>' 
-                        OnClick="btnViewTest_Click" />
-<%--                <asp:Button ID="DeleteButton" runat="server" CssClass="btn-danger" Text="Delete" CommandName="Delete" CommandArgument='<%# Eval("ID") %>' OnClientClick="return confirm('Are you sure you want to delete this record?');" />--%>
-            
+                                    AllowPaging="True" PageSize="10"
+                                    PagerSettings-Mode="NextPrevious" PagerSettings-Position="Bottom"
+                                    OnPageIndexChanging="GridView1_PageIndexChanging">
+                                    <Columns>
+                                        <asp:BoundField DataField="ID" HeaderText="ID" />
+                                        <asp:BoundField DataField="PatientNumber" HeaderText="Patient Number" />
+                                        <asp:BoundField DataField="FirstName" HeaderText="Name" />
+                                        <asp:BoundField DataField="Location" HeaderText="Location" />
+                                        <asp:BoundField DataField="DateRegistered" HeaderText="Date Registered" DataFormatString="{0:MM/dd/yyyy}" />
+                                        <asp:BoundField DataField="Sex" HeaderText="Gender" />
+                                        <asp:BoundField DataField="NIC" HeaderText="NIC" />
+                                        <asp:BoundField DataField="Mobile" HeaderText="Mobile #" />
+                                        <asp:BoundField DataField="DateOfBirth" HeaderText="Date of Birth" />
+                                        <asp:BoundField DataField="City" HeaderText="City" />
+                                        <asp:BoundField DataField="BloodGroup" HeaderText="Blood Group" />
 
-            </ItemTemplate>
-        </asp:TemplateField>
-    </Columns>
-    
-    <PagerTemplate>
-    <div class="pagination-container">
-        <div class="pagination-left">
-            <span>Page <%= (GridView1.PageIndex + 1) %> of <%= GridView1.PageCount %> </span>
-        </div>
-        <div class="pagination-right">
-            <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn bg-blueGradient text-white float-right" OnClick="PreviousPageButton_Click" 
-                Enabled="<%# GridView1.PageIndex > 0 %>" />
-            
-            <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn bg-blueGradient text-white float-right" OnClick="NextPageButton_Click" 
-                Enabled="<%# GridView1.PageIndex < GridView1.PageCount - 1 %>" />
-        </div>
-        <div class="pagination-bottom">
-            <span>Total Rows on Page: <%= GridView1.Rows.Count %></span>
-        </div>
-    </div>
-</PagerTemplate>
+                                        <asp:TemplateField HeaderText="Actions">
+                                            <ItemTemplate>
+                                                <div class="dropdown">
+                                                    <button type="button" class="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm dropdown-toggle" 
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Actions">
+                                                        <i class="fa fa-ellipsis-v"></i> 
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right rounded-0">
+                                                        <asp:LinkButton ID="lnkTests" runat="server" CssClass="dropdown-item common-font"
+                                                            CommandArgument='<%# Eval("ID") %>' OnClick="btnViewTest_Click" Text="Tests"><i class="fa fa-flask mr-2"></i>Tests</asp:LinkButton>
+                                                        <%-- Additional actions can be added here --%>
+                                                    </div>
+                                                </div>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                    </Columns>
 
-</asp:GridView>
+                                    <PagerTemplate>
+                                        <div class="pagination-container">
+                                            <div class="pagination-left">
+                                                <span>Page <%= (GridView1.PageIndex + 1) %> of <%= GridView1.PageCount %> </span>
+                                            </div>
+                                            <div class="pagination-right">
+                                                <asp:Button ID="btnPreviousPage" runat="server" Text="Previous Page" CssClass="btn btn-primary btn-sm" OnClick="PreviousPageButton_Click" 
+                                                    Enabled="<%# GridView1.PageIndex > 0 %>" />
+                                                <asp:Button ID="btnNextPage" runat="server" Text="Next Page" CssClass="btn btn-primary btn-sm" OnClick="NextPageButton_Click" 
+                                                    Enabled="<%# GridView1.PageIndex < GridView1.PageCount - 1 %>" />
+                                            </div>
+                                            <div class="pagination-bottom">
+                                                <span>Total Rows on Page: <%= GridView1.Rows.Count %></span>
+                                            </div>
+                                        </div>
+                                    </PagerTemplate>
+                                </asp:GridView>
             <asp:Panel ID="pnlTestResults" runat="server" Visible="false" CssClass="mt-3">
                             <asp:GridView ID="gvTestResults" runat="server" CssClass="table table-bordered table-hover" AutoGenerateColumns="False">
                                 <Columns>
@@ -310,64 +307,98 @@
                                         <ItemTemplate>
                                             <asp:PlaceHolder runat="server" ID="phActions">
                                                 <%# Convert.ToString(Eval("TemplateID")) == "27" ? 
-                                                    "<button type='button' class='btn bg-blueGradient text-white' data-toggle='modal' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-target='#urineTestModal'> Add Result </button>" : 
-                                                    "" %>
+                                                    "<button type='button' class='btn btn-white' data-toggle='modal' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-target='#urineTestModal'>" +
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />" +
+                                                    "</button>" 
+                                                    : "" %>
                                                 <%# (Convert.ToString(Eval("TemplateID")) == "4" && Convert.ToString(Eval("Type")) == "1" && Convert.ToString(Eval("Code")) != "3440") 
-                                                    ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#DLCTestModal'> Add Result </button>" 
+                                                    ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#DLCTestModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                     : "" %>
                                                 <%# (Convert.ToString(Eval("TemplateID")) == "4" && Convert.ToString(Eval("Type")) == "2") 
-                                                    ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#DLCTestModal'> Add Result </button>" 
+                                                    ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#DLCTestModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                     : "" %>
                                                 <%# Convert.ToString(Eval("TemplateID")) == "33" ? 
-                                                    "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#PUS_FOR_AFB'> Add Result </button>" : 
+                                                    "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#PUS_FOR_AFB'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" : 
                                                     "" %>
                                                                                                  
                                                 <%# Convert.ToString(Eval("TemplateID")) == "32" ? 
-                                                "<button type='button' class='btn bg-blueGradient text-white' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#PUS_FOR_AFB_SMEAR'> Add Result </button>" : 
+                                                "<button type='button' class='btn btn-white' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#PUS_FOR_AFB_SMEAR'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" : 
                                                 "" %>
 
                                                  <%# (Convert.ToString(Eval("Code")) == "1208") 
-                                                    ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#SemenCSModal'> Add Result </button>" 
+                                                    ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#SemenCSModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                     : "" %>
 
                                                  <%# Convert.ToString(Eval("Code")) == "5011" 
-                                                    ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#HBElectroModal'> Add Result </button>" 
+                                                    ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#HBElectroModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                     : "" %>
                                                 <%# (Convert.ToString(Eval("Code")) == "1200") 
-                                                    ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#StoolforCE'> Add Result </button>" 
+                                                    ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#StoolforCE'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                     : "" %>
                                                  <%# (Convert.ToString(Eval("Code")) == "4610") 
-                                                    ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#hcvPCRModal'> Add Result </button>" 
+                                                    ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#hcvPCRModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                     : "" %>
 
                                                     <%# (Convert.ToString(Eval("Code")) == "1101") 
-                                                        ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#urineTestModalForCS'> Add Result </button>" 
+                                                        ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#urineTestModalForCS'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                         : "" %> 
 
                                                       <%# (Convert.ToString(Eval("Code")) == "1201") 
-                                                        ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#stoolTestModalForCS'> Add Result </button>" 
+                                                        ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#stoolTestModalForCS'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                         : "" %>
                                                     <%# (Convert.ToString(Eval("Code")) == "1207") 
-                                                        ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#semenAnalysisModal'> Add Result </button>" 
+                                                        ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#semenAnalysisModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                         : "" %> 
                                                       <%# (Convert.ToString(Eval("Code")) == "2801") 
-                                                        ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#bloodGroupCrossmatchModal'> Add Result </button>" 
+                                                        ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#bloodGroupCrossmatchModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                         : "" %> 
                                                      <%# (Convert.ToString(Eval("Code")) == "4617") 
-                                                        ? "<button type='button' class='btn bg-blueGradient text-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#hbvPcrModal'> Add Result </button>" 
+                                                        ? "<button type='button' class='btn btn-white dlc-test-button' onclick=\"OpenDLC('" + Eval("ID") + "','" + Eval("Sex") + "','" + Eval("TestID") + "','" + Eval("TemplateID") + "','" + Eval("Code") + "','" + Eval("Type") + "');\" data-toggle='modal' data-target='#hbvPcrModal'>"+ 
+                                                    "<img src='../../Site/WebTemplate/images/plus.png' class='img-fluid' />"
+                                                    +"</button>" 
                                                         : "" %> 
 
 
-                                                <asp:Button 
-                                                    ID="btnAddTestResult" 
-                                                    runat="server" 
-                                                    CssClass="btn bg-blueGradient text-white" 
-                                                    Text="Add Result"  
-                                                    CommandName="AddResult" 
-                                                    CommandArgument='<%# Eval("ID") + "," + Eval("Sex") + "," + Eval("TestID") + "," + Eval("TemplateID") + "," + Eval("Code") + "," + Eval("Type") %>' 
-                                                    OnClick="btnAddTestResult_Click"
-                                                    Visible='<%# Convert.ToString(Eval("TemplateID")) == "3" || Convert.ToString(Eval("TemplateID")) == "6" || Convert.ToString(Eval("TemplateID")) == "4"&& Convert.ToString(Eval("Type")) == "0" || Convert.ToString(Eval("TemplateID")) == "5" || Convert.ToString(Eval("Code")) == "3440" %>' />
-                                            </asp:PlaceHolder>
+                                               <asp:LinkButton 
+    ID="btnAddTestResult"
+    runat="server"
+    CssClass="btn btn-white"
+    CommandName="AddResult"
+    CommandArgument='<%# Eval("ID") + "," + Eval("Sex") + "," + Eval("TestID") + "," + Eval("TemplateID") + "," + Eval("Code") + "," + Eval("Type") %>'
+    OnClick="btnAddTestResult_Click"
+    Visible='<%# Convert.ToString(Eval("TemplateID")) == "3" 
+            || Convert.ToString(Eval("TemplateID")) == "6" 
+            || (Convert.ToString(Eval("TemplateID")) == "4" && Convert.ToString(Eval("Type")) == "0") 
+            || Convert.ToString(Eval("TemplateID")) == "5" 
+            || Convert.ToString(Eval("Code")) == "3440" %>'>
+
+    <img src="../../Site/WebTemplate/images/plus.png" class="img-fluid" />
+
+</asp:LinkButton> </asp:PlaceHolder>
                                         </ItemTemplate>
                                     </asp:TemplateField>
 

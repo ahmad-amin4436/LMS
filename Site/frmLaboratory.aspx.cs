@@ -24,7 +24,7 @@ public partial class Site_frmLaboratory : System.Web.UI.Page
         // Check if the user is logged in
         if (Session["Username"] == null)
         {
-            Server.Transfer("frmLoginNew.aspx");
+            Response.Redirect("~/frmLoginNew.aspx");
             return; // Exit the method if redirected
         }
 
@@ -1166,7 +1166,7 @@ public partial class Site_frmLaboratory : System.Web.UI.Page
     int patientId;
     protected void btnViewTest_Click(object sender, EventArgs e)
     {
-        Button btnViewTest = (Button)sender;
+        LinkButton btnViewTest = (LinkButton)sender;
         patientId = Convert.ToInt32(btnViewTest.CommandArgument);
         var testResults = GetTestResults(patientId);
 
@@ -1246,7 +1246,7 @@ public partial class Site_frmLaboratory : System.Web.UI.Page
         //ViewState["TestData"] = dt;
 
 
-        Button btnAddTestResult = (Button)sender;
+        LinkButton btnAddTestResult = (LinkButton)sender;
         string[] args = btnAddTestResult.CommandArgument.ToString().Split(',');
 
         TestUniqueID = Convert.ToInt32(args[0]);  // Parse the first argument as an integer

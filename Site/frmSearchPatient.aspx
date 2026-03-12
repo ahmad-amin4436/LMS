@@ -252,7 +252,7 @@
         <div class="dropdown">
             <button type="button" class="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm dropdown-toggle" 
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Click for actions">
-                <i class="fa fa-ellipsis-v"></i> Actions
+                <i class="fa fa-ellipsis-v"></i> 
             </button>
             <div class="dropdown-menu dropdown-menu-right rounded-0">
                 <asp:LinkButton ID="btnAddTest" runat="server" CssClass="dropdown-item common-font" 

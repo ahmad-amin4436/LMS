@@ -259,25 +259,28 @@
        <asp:TemplateField HeaderText="Actions">
     <ItemTemplate>
         <div class="d-flex">
-            <asp:Button 
-                ID="btnViewTest" 
-                runat="server" 
-                CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm mr-2" 
-                Text="View Tests"  
-                CommandName="ViewTest" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnViewTest_Click" />
-                
-            <asp:Button 
-                ID="btnApprove" 
-                runat="server" 
-                CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" 
-                Text="Report"  
-                CommandName="Approve" 
-                CommandArgument='<%# Eval("ID") %>' 
-                OnClick="btnApprove_Click" 
-              />
+          <asp:LinkButton 
+    ID="btnViewTest"
+    runat="server"
+    CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm mr-2"
+    CommandName="ViewTest"
+    CommandArgument='<%# Eval("ID") %>'
+    OnClick="btnViewTest_Click">
 
+    <i class="fa fa-flask mr-2"></i> 
+
+</asp:LinkButton>
+          <asp:LinkButton 
+    ID="btnApprove"
+    runat="server"
+    CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm"
+    CommandName="Approve"
+    CommandArgument='<%# Eval("ID") %>'
+    OnClick="btnApprove_Click">
+
+    <i class="fa fa-file-alt mr-2"></i>
+
+</asp:LinkButton>
 
         </div>
     </ItemTemplate>
@@ -323,14 +326,17 @@
                                                 CommandName="AddResult"
                                                 CommandArgument='<%# Eval("ID") + "," + Eval("Sex") + "," + Eval("TestID") + "," + Eval("TemplateID") + "," + Eval("Code") %>'
                                                 OnClick="btnAddTestResult_Click" />--%>
-                                             <asp:Button 
-                                                            ID="btnRetake" 
-                                                            runat="server" 
-                                                            CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm" 
-                                                            Text="Retake"  
-                                                            CommandName="Retake" 
-                                                            CommandArgument='<%#  Eval("ID") %>' 
-                                                            OnClick="btnRetake_Click" />
+                                             <asp:LinkButton 
+    ID="btnRetake"
+    runat="server"
+    CssClass="btn btn-primary font-weight-bold customGrey-btn rounded-0 text-dark border btn-sm"
+    CommandName="Retake"
+    CommandArgument='<%# Eval("ID") %>'
+    OnClick="btnRetake_Click">
+
+    <i class="fa fa-undo mr-2"></i> 
+
+</asp:LinkButton>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                 </Columns>

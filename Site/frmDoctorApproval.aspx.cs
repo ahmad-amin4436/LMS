@@ -157,7 +157,7 @@ public partial class Site_frmDoctorApproval : System.Web.UI.Page
     int patientId;
     protected void btnViewTest_Click(object sender, EventArgs e)
     {
-        Button btnViewTest = (Button)sender;
+        LinkButton btnViewTest = (LinkButton)sender;
         patientId = Convert.ToInt32(btnViewTest.CommandArgument);
         var testResults = GetTestResults(patientId);
 
@@ -234,7 +234,7 @@ public partial class Site_frmDoctorApproval : System.Web.UI.Page
         //ViewState["TestData"] = dt;
 
 
-        Button btnAddTestResult = (Button)sender;
+        LinkButton btnAddTestResult = (LinkButton)sender;
         string[] args = btnAddTestResult.CommandArgument.ToString().Split(',');
 
         TestUniqueID = Convert.ToInt32(args[0]);  // Parse the first argument as an integer
@@ -580,7 +580,7 @@ public partial class Site_frmDoctorApproval : System.Web.UI.Page
 
     protected void btnApprove_Click(object sender, EventArgs e)
     {
-        Button btn = (Button)sender;
+        LinkButton btn = (LinkButton)sender;
         string id = btn.CommandArgument;
         string encryptedID = modMain.Encrypt(id);
 
@@ -592,7 +592,7 @@ public partial class Site_frmDoctorApproval : System.Web.UI.Page
 
     protected void btnRetake_Click(object sender, EventArgs e)
     {
-        Button btnRetake = (Button)sender;
+        LinkButton btnRetake = (LinkButton)sender;
 
         // Get the CommandArgument value (TestID)
         string testID = btnRetake.CommandArgument;
