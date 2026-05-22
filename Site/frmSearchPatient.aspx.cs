@@ -294,7 +294,7 @@ public partial class Site_frmSearchPatient : System.Web.UI.Page
             // Add center filter if any centers are selected
             if (selectedCenterIDs != null && selectedCenterIDs.Count > 0)
             {
-                query.Append(" AND [CenterID] IN (");
+                query.Append(" AND [Location] IN (");
                 for (int i = 0; i < selectedCenterIDs.Count; i++)
                 {
                     string paramName = "@CenterID" + i;
