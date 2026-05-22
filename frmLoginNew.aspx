@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lab Management System</title>
-<link rel="shortcut icon" href="~/Images/Final Logo-2.png" type="image/x-icon" />
+<link rel="shortcut icon" href="~/Images/amc-rm-bg.png" type="image/x-icon" />
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -248,7 +248,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="d-flex align-items-center">
-                                <img src="<%= ResolveUrl("~/Images/Final Logo-1.png") %>" alt="Apollo Lab" class="lab-logo">
+                                <img src="<%= ResolveUrl("~/Images/amc-rm-bg.png") %>" alt="Apollo Lab" class="lab-logo">
 <%--                                <h4 class="ms-3 mb-0 text-primary">LMS</h4>--%>
                             </div>
                         </div>
